@@ -13,13 +13,13 @@ private:
     double wage;
 
 public:
-    Employee(string name, string gender, int age, int id, double wage)
+    Employee(string Name, string Gender, int Age, int Id, double Wage)
     {
-        name = "Unknown";
-        gender = "Unknown";
-        age = 0;
-        id = 0;
-        wage = 0.0;
+        name = Name;
+        gender = Gender;
+        age = Age;
+        id = Id;
+        wage = Wage;
         cout << "Constructor with data: " << endl;
         cout << "Name: " << name << endl;
         cout << "Gender: " << gender << endl;
@@ -54,17 +54,26 @@ public:
 
     ~Employee()
     {
-        cout << "Тут сработал деструктор" << endl;
+        name;
+        gender;
+        age;
+        id;
+        wage;
+        cout << "Destructor" << endl;
     }
 };
 
 int main()
 {
-    Employee P4("Ann", "Female", 18, 4, 27.50);
-    P4.setEmployee();
-    P4.getEmployee();
+    Employee P1("Unknown", "Unknown", 0, 0, 0);
+    P1.setEmployee();
+    P1.getEmployee();
 
-    Employee P5("John", "Male", 21, 5, 30.00);
-    P5.setEmployee();
-    P5.getEmployee();
+    Employee P2("Unknown", "Unknown", 0, 0, 0);
+    P2.setEmployee();
+    P2.getEmployee();
+
+    Employee P3("Unknown", "Unknown", 0, 0, 0);
+    P3.setEmployee();
+    P3.getEmployee();
 }
